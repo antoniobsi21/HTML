@@ -8,7 +8,7 @@ table{
 	width: 600px;
 	margin: auto;
 }
-
+/* Cor BG TRs alternada*/
 tr:nth-child(2n+3){
 	background-color:#DBDBDB;
 }
@@ -29,7 +29,7 @@ td:nth-child(6n+2), td:nth-child(6n+3){
 	width: 20%;
 }
 
-/* Taxa */
+/* Taxa texto cidades*/
 .pop, td:nth-child(6n+6), td:nth-child(6n+5), td:nth-child(6n+4){
 	width: 15%;
 }
@@ -41,7 +41,4 @@ td:nth-child(6n+2){
 tr.linha1{
 	color: white;
 	background-color: #78b200;
-}
-.linha1 th{
-	
 }
