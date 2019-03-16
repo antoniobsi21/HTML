@@ -4,9 +4,9 @@ body{
 }
 
 table{
-	border: 1px solid white;
 	border-collapse: collapse;
 	width: 600px;
+	margin: auto;
 }
 
 tr:nth-child(2n+3){
@@ -16,29 +16,24 @@ tr:nth-child(2n+3){
 th,td{
 	padding: 5px;
 	text-align: left;
+	vertical-align: baseline;
+	padding-top: 10px;
 }
 
 /* Posição*/
-th.posi, td:nth-child(6n+1){
+.posi, td:nth-child(6n+1){
 	width: 5%;
 }
 
-/* Homicídios */
-.pop, td:nth-child(6n+4){
-	width: 15%;
-}
-
-/* Habitantes */
-td:nth-child(6n+5){
-	width: 15%;
+td:nth-child(6n+2), td:nth-child(6n+3){
+	width: 20%;
 }
 
 /* Taxa */
-td:nth-child(6n+6){
+.pop, td:nth-child(6n+6), td:nth-child(6n+5), td:nth-child(6n+4){
 	width: 15%;
 }
-
-
+/* Cor de */
 td:nth-child(6n+2){
 	color: #0D5188;
 }
