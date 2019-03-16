@@ -3,20 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
-	<script type="text/javascript">
-		function inserirLinha(){
-			var table = document.getElementById("tabela");
-			var linha = table.insertRow(-1);
-			for (var i = 0; i < 6; i++) {
-				var col = linha.insertCell(i);
-				col.innerHTML = "teste";
-			}
-		}
-
-	</script>
+	<script src="script/scripts.js"></script>
 </head>
 <body>
-	<button onclick="inserirLinha()">Teste</button>
+	<div class="container">
+		Cidade: <input type="text" name="Cidade" value="Cidade" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		País: <input type="text" name="País" value="País" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+
+		<!-- Não tenho idéia de como aplicar daqui pra frente -->
+
+		Homicídios: <input type="text" name="Homicídios" value="Homicídios" onfocus="limparTexto(this)" onblur="resetarTexto(this)" onkeypress="validarNumero(this)">
+		Habitantes: <input type="text" name="Habitantes" value="País" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		<button onclick="inserirLinha()">Inserir linha</button>
+	</div>
+
 	<table id="tabela">
 	<tr class="linha1">
 		<th class="posi">Posição</th>
