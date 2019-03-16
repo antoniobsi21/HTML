@@ -33,7 +33,7 @@ td:nth-child(6n+2), td:nth-child(6n+3){
 .pop, td:nth-child(6n+6), td:nth-child(6n+5), td:nth-child(6n+4){
 	width: 15%;
 }
-/* Cor de */
+/* Cor de cidades*/
 td:nth-child(6n+2){
 	color: #0D5188;
 }
