@@ -1,0 +1,44 @@
+body{
+	font-family: Arial;
+	font-size: 12px;
+}
+
+table{
+	border-collapse: collapse;
+	width: 600px;
+	margin: auto;
+}
+/* Cor BG TRs alternada*/
+tr:nth-child(2n+3){
+	background-color:#DBDBDB;
+}
+
+th,td{
+	padding: 5px;
+	text-align: left;
+	vertical-align: baseline;
+	padding-top: 10px;
+}
+
+/* Posição*/
+.posi, td:nth-child(6n+1){
+	width: 5%;
+}
+
+td:nth-child(6n+2), td:nth-child(6n+3){
+	width: 20%;
+}
+
+/* Taxa texto cidades*/
+.pop, td:nth-child(6n+6), td:nth-child(6n+5), td:nth-child(6n+4){
+	width: 15%;
+}
+/* Cor de */
+td:nth-child(6n+2){
+	color: #0D5188;
+}
+
+tr.linha1{
+	color: white;
+	background-color: #78b200;
+}
