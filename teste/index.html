@@ -7,13 +7,17 @@
 </head>
 <body>
 	<div class="container">
-		Cidade: <input type="text" name="Cidade" value="Cidade" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
-		País: <input type="text" name="País" value="País" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		Cidade: <input type="text" id="a1" name="Cidade" value="Cidade" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		País: <input type="text" id="a2" name="País" value="País" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
 
 		<!-- Não tenho idéia de como aplicar daqui pra frente -->
 
-		Homicídios: <input type="text" name="Homicídios" value="Homicídios" onfocus="limparTexto(this)" onblur="resetarTexto(this)" onkeypress="validarNumero(this)">
-		Habitantes: <input type="text" name="Habitantes" value="País" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		Homicídios: <input type="text" id="a3" name="Homicídios" value="Homicídios" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
+		<!-- 
+		ONKEYPRESS REMOVIDO
+		Homicídios: <input type="text" id="a3" name="Homicídios" value="Homicídios" onfocus="limparTexto(this)" onblur="resetarTexto(this)" onkeypress="validarNumero(this)"> -->
+
+		Habitantes: <input type="text" id="a4" name="Habitantes" value="Habitantes" onfocus="limparTexto(this)" onblur="resetarTexto(this)">
 		<button onclick="inserirLinha()">Inserir linha</button>
 	</div>
 
@@ -99,7 +103,7 @@
 		<td>80.28</td>
 	</tr>
 	<tr>
-		<td>10</td>
+		<td id="pos10">10</td>
 		<td>Belém</td>
 		<td>Brasil</td>
 		<td>1.743</td>
