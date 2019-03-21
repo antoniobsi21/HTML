@@ -38,7 +38,9 @@ tr td:nth-child(2){
 }
 
 /* Estilo da primeira linha */
-tr.linha1{
+.linha1, th, tr:first-child{
 	color: white;
 	background-color: #78b200;
+	position: sticky;
+	top: 0
 }
