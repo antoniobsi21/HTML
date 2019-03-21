@@ -1,18 +1,15 @@
-body{
-	font-family: Arial;
-	font-size: 12px;
-}
-
 table{
 	border-collapse: collapse;
 	width: 600px;
 	margin: auto;
+	font-family: Arial;
+	font-size: 12px;
 }
+
 /* Cor BG TRs alternada*/
 tr:nth-child(2n+3){
 	background-color:#DBDBDB;
 }
-
 th,td{
 	padding: 5px;
 	text-align: left;
@@ -21,23 +18,26 @@ th,td{
 }
 
 /* Posição*/
-.posi, td:nth-child(6n+1){
+.posi, tr td:nth-child(1){
 	width: 5%;
 }
 
-td:nth-child(6n+2), td:nth-child(6n+3){
+/* Cidade e país */
+tr td:nth-child(n+2):nth-child(-n+3){
 	width: 20%;
 }
 
-/* Taxa texto cidades*/
-.pop, td:nth-child(6n+6), td:nth-child(6n+5), td:nth-child(6n+4){
+/* Taxa, homicidios, habitantes */
+.pop, tr td:nth-child(n+4):nth-child(-n+6){
 	width: 15%;
 }
-/* Cor de cidades*/
-td:nth-child(6n+2){
+
+/* Cor de texto da coluna cidades*/
+tr td:nth-child(2){
 	color: #0D5188;
 }
 
+/* Estilo da primeira linha */
 tr.linha1{
 	color: white;
 	background-color: #78b200;
