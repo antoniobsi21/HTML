@@ -1,0 +1,11 @@
+.container{
+	padding-top: 60px;
+}
+
+h1{
+	text-align: center;
+}
+
+.form-group>button{
+	width: 100%;
+}
