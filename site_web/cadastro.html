@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
+<!-- Início header -->
 <header>
 	<nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
 		<a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo"></a>
@@ -19,19 +20,21 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item"><a href="login.html" class="nav-link">Logar</a></li>
-				<li class="nav-item"><a href="cadastro.html" class="nav-link">Cadastrar</a></li>
+				<li class="nav-item"><a href="cadastro.html" class="nav-link active">Cadastrar</a></li>
 				<li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
 			</ul>
-			<form action="invocador.html" class="form-inline">
+			<form action="invocador.html" class="form-inline my-2 my-lg-0">
 				<input type="text" placeholder="Nome de invocador" class="form-control mr-sm-2">
-				<button type="submit" class="btn btn-success">Procurar</button>
+				<button type="submit" class="btn btn-success my-2 my-sm-0">Procurar</button>
 			</form>
 		</div>
 	</nav>
 </header>
 <br>
-<!-- Começo do conteúdo -->
-<div class="container">
+<!-- Fim header -->
+
+<!-- Começo do conteúdo principal -->
+<div class="container" id="pb">
 	<div class="row">
 		<div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
 			
@@ -97,6 +100,14 @@
 	</div>
 </div>
 <!-- Fim conteúdo principal -->
+
+<!-- Início do footer -->
+<footer>
+	<div class="text-center py-3 bg-dark text-light">&copy; 2019 Copyright:
+      <a href="#"> IFC - Araquari</a>
+    </div>
+</footer>
+<!-- Fim footer -->
 
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
