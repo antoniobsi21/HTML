@@ -31,11 +31,12 @@
 </header>
 <br>
 <!-- Começo do conteúdo -->
-<div class="container">
+<div class="container teste">
 	<div class="row">
-		<div class="col-12 col-md-6 offset-md-3">
-			<h1>Cadastro</h1> <br>
-			<form>
+		<div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+			
+			<form class="formulario">
+				<h1>Cadastro</h1><br>
 				<div class="form-group">
 					<label for="formApelido">Apelido</label>
 					<input type="text" class="form-control" id="formApelido" placeholder="Apelido"></input>
@@ -44,15 +45,59 @@
 					<label for="formEmail">Email</label>
 					<input type="email" class="form-control" id="formEmail" placeholder="Email"></input>
 				</div>
+				<div class="form-group">
+					<label for="forSenha">Senha</label>
+					<input type="password" class="form-control" id="forSenha" placeholder="Senha"></input>
+				</div>
+
+				<div class="form-group">
+					<div class="card">
+						<div class="card-header">
+							<div class="checkbox" style="padding: 1px;">
+						      <label data-toggle="collapse" data-target="#um" aria-expanded="false" aria-controls="collapseOne">
+						        <input type="checkbox"/> <strong>Sincronizar nickname</strong>
+						      </label>
+						    </div>
+						</div>
+						<div id="um" class="collapse">
+							<div class="card-body">
+								<div class="form-row">
+									<div class="col-8">
+										<label for="formNick">Nickname</label>
+										<input type="text" class="form-control" id="formNick" placeholder="Nick"></input>
+									</div>
+									<div class="col-4">
+										<label for="forSelect"> Região</label>
+										<select class="custom-select" required>
+									    	<option value="BR">BR</option>
+									    	<option value="NA">NA</option>
+									    	<option value="EUNE">EUNE</option>
+									    	<option value="EUW">EUW</option>
+									    	<option value="JP">JP</option>
+									    	<option value="KR">KR</option>
+									    	<option value="LAS">LAS</option>
+									    	<option value="LAN">LAN</option>
+									    	<option value="OCE">OCE</option>
+									    	<option value="TR">TR</option>
+									    	<option value="RU">RU</option>
+									    	<option value="PBE">PBE</option>
+									    </select>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
 				
 				<div class="form-group">
-					<button type="submit" class="btn btn-primary">Cadastrar</button>
+					<button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
 				</div>
 			</form>
 		</div>
 	</div>
 </div>
 <!-- Fim conteúdo principal -->
+
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

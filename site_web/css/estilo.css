@@ -1,16 +1,25 @@
+html, body{
+	background-color: #e0e0e0;
+	height: 100%;
+}
+
 .container{
 	padding-top: 60px;
+
 }
 
 h1{
 	text-align: center;
 }
 
-.form-group>button{
-	width: 100%;
-}
-
 .logo{
 	height: 30px;
 	margin-bottom: 5px;
+}
+
+.formulario{
+	background-color: #fcfcfc;
+	padding: 10%;
+	box-shadow: 0px 0px 7px 0px black;
+	border-radius: 7px;
 }
