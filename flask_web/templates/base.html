@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>{% block title %}{% endblock title %}</title>
+	<title>{{ contexto.titulo }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie-edge">
@@ -23,8 +23,8 @@
 				<li class="nav-item {% block navlicadastro %}{% endblock %}"><a href="{{ url_for('cadastro') }}" class="nav-link">Cadastrar</a></li>
 				<li class="nav-item {% block navlicontato %}{% endblock %}"><a href="{{ url_for('contato') }}" class="nav-link">Contato</a></li>
 			</ul>
-			<form action="invocador.html" class="form-inline">
-				<input type="text" placeholder="Nome de invocador" class="form-control mr-sm-2">
+			<form action="{{ url_for('invocador') }}" method="GET" class="form-inline">
+				<input type="text" placeholder="Nome de invocador" name="invocador" value="{% if contexto.name %}{{ contexto.name }}{% endif %}" class="form-control mr-sm-2">
 				<button type="submit" class="btn btn-success">Procurar</button>
 			</form>
 		</div>
