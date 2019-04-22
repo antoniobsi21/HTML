@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Contato
+{% endblock title %}
+
+{% block navlicontato %}
+	active
+{% endblock %}
+
+{% block content %}
+<div class="container" id="pb">
+	<div class="row">
+		<div class="col-12 col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+			<form class="formulario" action="index.html">
+				<h1>Contato</h1>
+				<div class="form-group">
+					<label>Nome</label>
+					<input type="text" placeholder="Nome" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Assunto</label>
+					<input type="text" placeholder="Assunto" class="form-control">
+				</div>
+				<div class="form-group">
+					<label>Mensagem</label>
+					<textarea class="form-control" rows="7"></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock content %}

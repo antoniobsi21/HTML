@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock title %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+<!-- Início do header -->
+<header>
+	<nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+		<a href="{{ url_for('index') }}" class="navbar-brand"><img src="{{ url_for('static', filename='img/logo.png') }}" class="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item {% block navlilogin %}{% endblock %}"><a href="{{ url_for('login') }}" class="nav-link">Logar</a></li>
+				<li class="nav-item {% block navlicadastro %}{% endblock %}"><a href="{{ url_for('cadastro') }}" class="nav-link">Cadastrar</a></li>
+				<li class="nav-item {% block navlicontato %}{% endblock %}"><a href="{{ url_for('contato') }}" class="nav-link">Contato</a></li>
+			</ul>
+			<form action="invocador.html" class="form-inline">
+				<input type="text" placeholder="Nome de invocador" class="form-control mr-sm-2">
+				<button type="submit" class="btn btn-success">Procurar</button>
+			</form>
+		</div>
+	</nav>
+</header>
+<!-- Fim do header -->
+<br>
+<!-- Começo do conteúdo principal-->
+{% block content %}
+
+{% endblock content %}
+<!-- Fim do conteúdo principal -->
+<br>
+<!-- Início do footer -->
+<footer>
+	<div class="text-center py-3 bg-dark text-light">&copy; 2019 Copyright:
+      <a href="https://araquari.ifc.edu.br" target="_blank"> IFC - Araquari</a>
+    </div>
+</footer>
+<!-- Fim footer -->
+<script src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>

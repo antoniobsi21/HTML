@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Página inicial
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="carousel slide" data-ride="carousel" id="car">
+				<!-- indicadores -->
+				<ul class="carousel-indicators">
+					<li data-target="#car" data-slide-to="0" class="active"></li>
+					<li data-target="#car" data-slide-to="1"></li>
+					<li data-target="#car" data-slide-to="2"></li>
+				</ul>
+				<!-- Imagens -->	
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="{{ url_for('static', filename='img/carousel/lol.jpg') }}" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="{{ url_for('static', filename='img/carousel/lol2.jpg') }}" class="img-fluid">
+					</div>
+					<div class="carousel-item">
+						<img src="{{ url_for('static', filename='img/carousel/hf.jpg') }}" class="img-fluid">
+					</div>
+				</div>
+				<!-- Controle de esquerda e direita -->
+
+				<a href="#car" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+				<a href="#car" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+			</div>
+		</div>
+	</div>
+
+
+	<br>
+	<div class="row">
+		<div class="col-8 offset-2">
+			<h1>League of Legends</h1><br>
+			<p>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<b>League of Legends</b> (ou como era conhecido antigamente, League of Legends: Clash of Fates ou LoL como diminutivo) é um MOBA (Multiplayer Online Battle Arena - arena de batalha multiplayer online) desenvolvido e publicado pela empresa Riot Games, para o sistema operacional Windows. O jogo foi anunciado pela primeira vez em 7 de outubro de 2008 e lançado em 27 de outubro de 2009. O jogo permaneceu em fase beta de 10 de abril de 2009 até 22 de outubro de 2009. O jogo foi lançado oficialmente no Brasil no dia 9 de Agosto de 2012.</p>
+			<p>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Dois dos principais desenvolvedores do mod (modificação) do popular Warcraft III, Defense of the Ancients: Allstars (mais conhecido simplesmente como DotA), Steve "Guinsoo" Feak e Steve "Pendragon" Mescon estão envolvidos com a Riot Games no processo de criação do League of Legends. Guinsoo criou DotA: Allstars, a partir da versão clássica do mod criado por Eul, acrescentando o seu próprio conteúdo, incluindo 40 heróis, vários itens e diversas mudanças de jogabilidade. A partir daí, Guinsoo confiou Dota: Allstars para sua desenvolvedora atual, Icefrog. Pendagron, Diretor de Relações Comunitárias da Riot Games, ajudou a criar o site do Dota Allstars e seus fóruns, e está atualmente trabalhando no DotA: Allstars e no League of Legends. </p>
+		</div>
+	</div>
+</div>
+{% endblock content %}
