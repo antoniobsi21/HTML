@@ -5,10 +5,10 @@
 
 <div class="container">
 	<div class="card mx-auto" id="cardInvocador">
-		<img src="img/profileicon/icon1.jpg" class="card-img-top" alt="Ícone de invocador">
+		<img src="{{ url_for('static', filename='img/profileicon/icon1.jpg') }}" class="card-img-top">
 		<div class="card-body">
-			<h5 class="card-title">Erloucoh</h5>
-			<p class="card-text text-center">Nível 119</p>
+			<h5 class="card-title">{{ contexto.invocador }}</h5>
+			<p class="card-text text-center">Nível {{ contexto.nivel }}</p>
 			<p class="card-text text-center"><small class="text-muted">Última att há 5 min</small></p>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 			<div class="card-deck">
 				<div class="card mx-auto">
 			  		<div class="card-header">Ranqueada Solo-Duo</div>
-			    	<img src="img/emblems/Emblem_Platinum.png" class="card-img-top">
+			  		<img src="{{ url_for('static', filename='img/emblems/Emblem_Platinum.png') }}" class="card-img-top">
 			    	<div class="card-body">
 				    	<h5 class="card-title">Platina 1 (54 PdL)</h5>
 				    	<p class="card-text text-center">Os agentes de Ashe</p>
@@ -28,7 +28,7 @@
 				</div>
 				<div class="card mx-auto">
 			  		<div class="card-header">Ranqueada Flex 5x5</div>
-			    	<img src="img/emblems/Emblem_Bronze.png" class="card-img-top">
+			    	<img src="{{ url_for('static', filename='img/emblems/Emblem_Bronze.png') }}" class="card-img-top">
 			    	<div class="card-body">
 				    	<h5 class="card-title">Bronze 1 (100 PdL)</h5>
 				    	<p class="card-text text-center">Os agentes de Ashe</p>
@@ -37,7 +37,7 @@
 				</div>
 				<div class="card mx-auto">
 			  		<div class="card-header">Ranqueada Flex 3x3</div>
-			    	<img src="img/emblems/Emblem_Challenger.png" class="card-img-top">
+			    	<img src="{{ url_for('static', filename='img/emblems/Emblem_Challenger.png') }}" class="card-img-top">
 			    	<div class="card-body">
 				    	<h5 class="card-title">Desafiante (550 PdL)</h5>
 				    	<p class="card-text text-center">Os agentes de Ashe</p>
