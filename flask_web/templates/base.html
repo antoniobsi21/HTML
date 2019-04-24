@@ -24,10 +24,10 @@
 				<li class="nav-item {% block navlicontato %}{% endblock %}"><a href="{{ url_for('contato') }}" class="nav-link">Contato</a></li>
 			</ul>
 			<form action="{{ url_for('invocador') }}" method="GET" class="form-inline">
-				<input type="text" placeholder="Nome de invocador" name="invocador" value="{% if contexto.invocador %}{{ contexto.invocador }}{% endif %}" class="form-control mr-sm-2" required>
+				<input type="text" placeholder="Nome de invocador" name="invocador" value="{% if contexto.dados %}{{ contexto.dados.name }}{% endif %}" class="form-control mr-sm-2" required>
 				<select class="custom-select my-1 mr-sm-2" name="regiao">
 					{% for regiao in contexto.regioes %}
-			    		<option value="{{ regiao }}">{{ regiao }}</option>
+			    		<option value="{{ regiao }}" {% if contexto.selecionado == regiao %}selected{% endif %}>{{ regiao }}</option>
 			    	{% endfor %}
 			    </select>
 				<button type="submit" class="btn btn-success">Procurar</button>

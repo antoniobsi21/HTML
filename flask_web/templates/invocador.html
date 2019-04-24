@@ -5,10 +5,10 @@
 
 <div class="container">
 	<div class="card mx-auto" id="cardInvocador">
-		<img src="{{ url_for('static', filename='img/profileicon/icon1.jpg') }}" class="card-img-top">
+		<img src='{{ url_for("static", filename="img/profileicon/" + contexto.icone + ".png") }}' class="card-img-top rounded-circle">
 		<div class="card-body">
-			<h5 class="card-title">{{ contexto.invocador }}</h5>
-			<p class="card-text text-center">Nível {{ contexto.nivel }}</p>
+			<h5 class="card-title">{{ contexto.dados.name }}</h5>
+			<p class="card-text text-center">Nível {{ contexto.dados.summonerLevel }}</p>
 			<p class="card-text text-center"><small class="text-muted">Última att há 5 min</small></p>
 		</div>
 	</div>
